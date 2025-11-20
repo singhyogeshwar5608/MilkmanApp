@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f3f4f6;
+  color: #0f172a;
+}
+
+html.dark body {
+  background: radial-gradient(circle at top, #020617, #020617 40%, #020617 100%);
+  color: #e2e8f0;
+}
+
+@media print {
+  @page {
+    size: landscape;
+  }
+}
